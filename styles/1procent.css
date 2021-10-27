@@ -1,0 +1,115 @@
+/* -- BANNER -- */
+.banner-container {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .banner-container {
+        width: 720px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .page-banner {
+        width: 100%;
+        height: 262px;
+        background-image: url(../assets/assets_pasieka/1procent_banner_md.jpg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .banner-container {
+        width: 960px;
+    }
+
+    .page-banner {
+        height: 354px;
+        background-image: url(../assets/assets_pasieka/1procent_banner_lg.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner-container {
+        width: 1140px;
+    }
+
+    .page-banner {
+        height: 423px;
+        background-image: url(../assets/assets_pasieka/1procent_banner_xl.jpg);
+    }
+}
+
+/* -- BASIC -- */
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #084ca1;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+p {
+    color: #222;
+    text-align: justify;
+}
+
+/* -- 1% TAX INSTRUCTION  */
+.instruction-heading {
+    font-family: museo300;
+    color: #222;
+}
+
+.instruction-heading > .step-number {
+    font-family: museo500;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #fff;
+    width: 2.5rem;
+    padding: 0.5rem 0;
+    background-color: #222;
+    border-radius: 4px 0 4px 4px;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.instruction-heading > .step-title {
+    font-size: 1.1rem;
+}
+
+.instruction-heading > .step-title > span {
+    font-family: museo500;
+}
+
+.instruction-container > .step-info {
+    margin-left: 3.5rem;
+}
+
+.instruction-container > .step-info > p {
+    margin-bottom: 1.25rem;
+}
+
+.instruction-container > .step-info > p:last-child {
+    margin-bottom: 0;
+}
+
+.instruction-container > .step-info > p > span {
+    font-weight: 700;
+}
+
+/* CARDBAR REPAIR */
+.card-title {
+    display: block;
+}
+
+.cardbar > div:first-child {
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 992px) {
+    .cardbar > div:first-child {
+        justify-content: flex-start;
+    }
+}

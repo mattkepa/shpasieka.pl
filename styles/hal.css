@@ -1,0 +1,271 @@
+/* -- BANNER -- */
+.banner-container {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .banner-container {
+        width: 720px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .page-banner {
+        width: 100%;
+        height: 262px;
+        background-image: url(../assets/assets_pasieka/1procent_banner_md.jpg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .banner-container {
+        width: 960px;
+    }
+
+    .page-banner {
+        height: 354px;
+        background-image: url(../assets/assets_pasieka/1procent_banner_lg.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner-container {
+        width: 1140px;
+    }
+
+    .page-banner {
+        height: 423px;
+        background-image: url(../assets/assets_pasieka/1procent_banner_xl.jpg);
+    }
+}
+
+/* -- BASIC -- */
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #084ca1;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+p {
+    color: #222;
+    text-align: justify;
+}
+
+/* -- 1% TAX INSTRUCTION  */
+.instruction-heading {
+    font-family: museo300;
+    color: #222;
+}
+
+.instruction-heading > .step-number {
+    font-family: museo500;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #fff;
+    width: 2.5rem;
+    padding: 0.5rem 0;
+    background-color: #222;
+    border-radius: 4px 0 4px 4px;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.instruction-heading > .step-title {
+    font-size: 1.1rem;
+}
+
+.instruction-heading > .step-title > span {
+    font-family: museo500;
+}
+
+.instruction-container > .step-info {
+    margin-left: 3.5rem;
+}
+
+.instruction-container > .step-info > p {
+    margin-bottom: 1.25rem;
+}
+
+.instruction-container > .step-info > p:last-child {
+    margin-bottom: 0;
+}
+
+.instruction-container > .step-info > p > span {
+    font-weight: 700;
+}
+
+/* CARDBAR REPAIR */
+.card-title {
+    display: block;
+}
+
+.cardbar > div:first-child {
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 992px) {
+    .cardbar > div:first-child {
+        justify-content: flex-start;
+    }
+}
+
+/* -- DOCUMENTS -- */
+
+.doc-container a{
+    color: inherit;
+}
+
+.doc-container > a:hover {
+    text-decoration: none;
+}
+
+/* DOCUMENT ICON */
+.doc-icon-container {
+    perspective: 400px;
+    -webkit-perspective: 400px;
+    flex: 0 0 auto;
+}
+
+.doc-icon-container img {
+    margin-top: 0.5rem;
+}
+
+.doc-icon-card {
+    position: relative;
+    height: 64px;
+    width: 50px;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.doc-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 50px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.doc-icon-active, .doc-icon-inactive {
+    transform: rotateX(0deg);
+}
+
+.doc-icon-active {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.doc-container > a:hover .doc-icon-card {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+/* DOCUMENT DATA */
+.doc-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.3rem
+}
+
+.doc-info {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 0.6rem;
+}
+
+.doc-date {
+    font-size: 0.8rem;
+    color: #9d9d9d;
+}
+
+/* -- MAP -- */
+
+.map-container {
+    margin-top: 1rem;
+}
+
+.map-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#map {
+    height: 250px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #map {
+        height: 300px;
+    }
+    .map-container {
+       height: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #map {
+        height: 400px;
+    }
+    .map-container {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #map {
+        height: 500px;
+    }
+    .map-container {
+        height: 500px;
+    }
+}
+
+.info-heading {
+    font-family: museo500;
+    font-size: 1.1rem;
+}
+
+.info-content > span {
+    color: #333;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.info-heading,
+.info-content {
+    color: #222;
+}
+
+.additional-info {
+    font-size: 0.9rem;
+    color: #222;
+}
+
+.additional-info > span {
+    font-family: museo300;
+}
+
+.text-bolded {
+    font-weight: 700;
+}
+
+h3.downloads {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #084ca1;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid #084ca1;
+    margin-bottom: 1.5rem;
+}

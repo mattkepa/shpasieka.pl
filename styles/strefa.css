@@ -1,0 +1,116 @@
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #084ca1;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.team-logo-hexagon {
+    margin: 0 auto 20px auto;
+}
+
+.team-logo-hexagon > img {
+    height: 125px;
+}
+
+.team-meet-info-container {
+    flex-grow: 1;
+}
+
+.team-meet-when > .when-heading,
+.team-meet-where > .where-heading,
+.team-meet-addinfo > .addinfo-heading,
+.patrol-meet-when > .when-heading,
+.patrol-meet-where > .where-heading,
+.patrol-meet-addinfo > .addinfo-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team-meet-when > .when-heading > img,
+.team-meet-where > .where-heading > img,
+.team-meet-addinfo > .addinfo-heading > i,
+.patrol-meet-when > .when-heading > img,
+.patrol-meet-where > .where-heading > img,
+.patrol-meet-addinfo > .addinfo-heading > i {
+    height: 30px;
+    width: 40px;
+    text-align: center;
+}
+
+.team-meet-addinfo > .addinfo-heading > i,
+.patrol-meet-addinfo > .addinfo-heading > i {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.team-meet-when > .when-heading > span,
+.team-meet-where > .where-heading > span,
+.team-meet-addinfo > .addinfo-heading > span,
+.patrol-meet-when > .when-heading > span,
+.patrol-meet-where > .where-heading > span,
+.patrol-meet-addinfo > .addinfo-heading > span {
+    display: block;
+    font-family: museo500;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #222;
+}
+
+.when-content,
+.where-content,
+.addinfo-content {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #084ca1;
+    margin-left: 50px;
+}
+
+.patrol-meet > img {
+    height: 80px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    margin-top: 1rem;
+}
+
+#map {
+    height: 250px;
+    width: 100%;
+}
+
+.zhp-links {
+    padding-top: 0.7rem;
+}
+
+.zhp-links > li {
+    padding: 0.7rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    #map {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .map-container {
+        margin-top: 3.5rem;
+    }
+
+    #map {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #map {
+        height: 500px;
+    }
+}

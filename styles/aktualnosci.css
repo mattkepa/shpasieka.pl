@@ -1,0 +1,150 @@
+
+/* News image container */
+.news-card .entry-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.news-card .entry-img > img {
+    transition: all 0.5s ease-in-out;
+}
+
+.news-card .entry-img:hover > img {
+    transform: scale(1.1);
+}
+
+.entry-img .img-overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* News category icon */
+.entry-img > .img-overlay > img {
+    height: 40px;
+    width: auto;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.img-overlay.entry-cat-szczep {
+    background: linear-gradient(0deg, #232357, transparent);
+}
+.img-overlay.entry-cat-harcerze {
+    background: linear-gradient(0deg, #222, transparent);
+}
+.img-overlay.entry-cat-harcerki {
+    background: linear-gradient(0deg, #084ca1, transparent);
+}
+.img-overlay.entry-cat-wedrownicy {
+    background: linear-gradient(0deg, #ce181e, transparent);
+}
+.img-overlay.entry-cat-zuchy {
+    background: linear-gradient(0deg, #efac1f, transparent);
+}
+.img-overlay.entry-cat-zhp {
+    background: linear-gradient(0deg, #85A314, transparent);
+}
+.img-overlay.entry-cat-choragiew {
+    background: linear-gradient(0deg, #4a7b26, transparent);
+}
+.img-overlay.entry-cat-hufiec {
+    background: linear-gradient(0deg, #a6ce39, transparent);
+}
+.img-overlay.entry-cat-inne {
+    background: linear-gradient(0deg, #5C3896, transparent);
+}
+
+
+.entry-info {
+    font-family: 'Roboto', sans-serif;
+}
+
+.entry-info > .meta-info {
+    font-size: 11px;
+    margin: 0.5rem 0;
+}
+
+.entry-info > .meta-info > .entry-author {
+    color: #222;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+}
+
+.entry-info > .meta-info > .entry-date {
+    color: #8c8c8c;
+}
+
+.entry-title > a { 
+    color: #222;
+}
+
+.entry-title > a:hover {
+    color: #222;
+}
+
+/* News categories colors*/
+
+.btn.entry-cat-szczep,
+.content-separator.entry-cat-szczep {
+    background-color: #232357;
+}
+.btn.entry-cat-harcerze,
+.content-separator.entry-cat-harcerze {
+    background-color: #222;
+}
+.btn.entry-cat-harcerki,
+.content-separator.entry-cat-harcerki {
+    background-color: #084ca1;
+}
+.btn.entry-cat-wedrownicy,
+.content-separator.entry-cat-wedrownicy {
+    background-color: #ce181e;
+}
+.btn.entry-cat-zuchy,
+.content-separator.entry-cat-zuchy {
+    background-color: #efac1f;
+}
+.btn.entry-cat-zhp,
+.content-separator.entry-cat-zhp {
+    background-color: #85A314;
+}
+.btn.entry-cat-choragiew,
+.content-separator.entry-cat-choragiew {
+    background-color: #4a7b26;
+}
+.btn.entry-cat-hufiec,
+.content-separator.entry-cat-hufiec {
+    background-color: #a6ce39;
+}
+.btn.entry-cat-inne,
+.content-separator.entry-cat-inne {
+    background-color: #5C3896;
+}
+
+
+/* Content separator line */
+.content-separator {
+    width: 100%;
+    color: #fff;
+    font-size: 10px;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 2px 6px 2px 6px;
+    margin: 1rem 0;
+}
+
+/* News short text */
+.news-content-short > p {
+    color: #222;
+    text-align: justify;
+}
+
+.news-card > a:hover {
+    color: #fff;
+}
+
+
+

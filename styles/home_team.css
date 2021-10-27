@@ -1,0 +1,66 @@
+/* -- HERO IMAGE -- */
+.hero-team-img {
+    width: 100%;
+    height: calc(100vh - 54px);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.hero-2ldh {
+    background-image: url(../assets/hero_images/2ldh/2ldh_hero-image_small.jpg);
+}
+
+.hero-22ldh {
+    background-image: url(../assets/hero_images/22ldh/22ldh_hero-image_small.jpg);
+}
+
+.hero-222ldw {
+    background-image: url(../assets/hero_images/222ldw/222ldw_hero-image_small.jpg);
+}
+
+.hero-lgzpp {
+    background-image: url(../assets/hero_images/lgzpp/lgzpp_hero-image_small.jpg);
+}
+
+h2 {
+    font-family: museo500;
+    font-size: 2.5rem;
+    color: #222;
+}
+
+@media screen and (min-width: 510px) {
+    .hero-2ldh {
+        background-image: url(../assets/hero_images/2ldh/2ldh_hero-image_medium.jpg);
+    }
+
+    .hero-22ldh {
+        background-image: url(../assets/hero_images/22ldh/22ldh_hero-image_medium.jpg);
+    }
+
+    .hero-222ldw {
+        background-image: url(../assets/hero_images/222ldw/222ldw_hero-image_medium.jpg);
+    }
+
+    .hero-lgzpp {
+        background-image: url(../assets/hero_images/lgzpp/lgzpp_hero-image_medium.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-2ldh {
+        background-image: url(../assets/hero_images/2ldh/2ldh_hero-image_large.jpg);
+    }
+
+    .hero-22ldh {
+        background-image: url(../assets/hero_images/22ldh/22ldh_hero-image_large.jpg);
+    }
+
+    .hero-222ldw {
+        background-image: url(../assets/hero_images/222ldw/222ldw_hero-image_large.jpg);
+    }
+
+    .hero-lgzpp {
+        background-image: url(../assets/hero_images/lgzpp/lgzpp_hero-image_large.jpg);
+    }
+}

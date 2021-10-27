@@ -1,0 +1,189 @@
+.timeline {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.timeline-event {
+    width: 100%;
+    box-sizing: border-box;
+    border-left: 20px solid #222;
+}
+
+.tl-event-header {
+    flex-direction: row;
+    align-items: center;
+}
+
+.tl-event-header > .event-point-line {
+    height: 3px;
+    width: 30px;
+    order: 1;
+}
+
+.tl-event-header > .event-point-cirlce {
+    order: 2;
+}
+
+.tl-event-header > .event-point-cirlce > img {
+    width: 80px;
+    height: 80px;
+    margin-left: -1px;
+}
+
+.tl-event-header > .event-date {
+    font-family: museo500;
+    font-size: 2rem;
+    color: #222;
+    margin-left: 1rem;
+    order: 3;
+}
+
+.tl-event-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 30px;
+}
+
+.tl-event-content > .event-title {
+    font-family: museo300;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.tl-event-content > .event-text {
+    font-weight: 300;
+    color: #222;
+    text-align: justify;
+}
+
+.timeline-event:nth-child(4n + 1) {
+    border-color: #222;
+}
+
+.timeline-event:nth-child(4n + 1) > .tl-event-header > .event-point-line {
+    background-color: #222;
+}
+
+.timeline-event:nth-child(4n + 1) > .tl-event-header > .event-date,
+.timeline-event:nth-child(4n + 1) > .tl-event-content > .event-title {
+    color: #222;
+}
+
+.timeline-event:nth-child(4n + 2) {
+    border-color: #203581;
+}
+
+.timeline-event:nth-child(4n + 2) > .tl-event-header > .event-point-line {
+    background-color: #203581;
+}
+
+.timeline-event:nth-child(4n + 2) > .tl-event-header > .event-date,
+.timeline-event:nth-child(4n + 2) > .tl-event-content > .event-title {
+    color: #203581;
+}
+
+.timeline-event:nth-child(4n + 3) {
+    border-color: #333;
+}
+
+.timeline-event:nth-child(4n + 3) > .tl-event-header > .event-point-line {
+    background-color: #333;
+}
+
+.timeline-event:nth-child(4n + 3) > .tl-event-header > .event-date,
+.timeline-event:nth-child(4n + 3) > .tl-event-content > .event-title {
+    color: #333;
+}
+
+.timeline-event:nth-child(4n + 4) {
+    border-color: #084CA1;
+}
+
+.timeline-event:nth-child(4n + 4) > .tl-event-header > .event-point-line {
+    background-color: #084CA1;
+}
+
+.timeline-event:nth-child(4n + 4) > .tl-event-header > .event-date,
+.timeline-event:nth-child(4n + 4) > .tl-event-content > .event-title {
+    color: #084CA1;
+}
+
+@media screen and (min-width: 992px) {
+    .tl-event-header > .event-point-line {
+        height: 4px;
+    }
+
+    .tl-event-header > .event-point-cirlce > img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .tl-event-header > .event-date {
+        font-size: 2.1rem;
+    }
+
+    .tl-event-content > .event-title {
+        font-size: 1.6rem;
+    }
+
+    .tl-event-content > .event-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .timeline-event {
+        width: calc(50% + 10px);
+    }
+
+    .timeline-event:nth-child(odd) {
+        align-self: flex-end;
+    }
+    
+    .timeline-event:nth-child(even) {
+        border-left: none;
+        border-right-width: 20px;
+        border-right-style: solid;
+    }
+
+    .timeline-event:nth-child(even) > .tl-event-header {
+        justify-content: flex-end;
+    }
+
+    .timeline-event:nth-child(even) > .tl-event-header > .event-point-line {
+        order: 3;
+    }
+
+    .timeline-event:nth-child(even) > .tl-event-header > .event-date {
+        order: 1;
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+    .timeline-event:nth-child(even) > .tl-event-header > .event-point-cirlce > img {
+        margin-left: 0;
+        margin-right: -1px;
+    }
+
+    .timeline-event:nth-child(even) > .tl-event-content {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .tl-event-header > .event-point-cirlce > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tl-event-header > .event-date {
+        font-size: 2.2rem;
+    }
+
+    .tl-event-content > .event-title {
+        font-size: 1.7rem;
+    }
+
+    .tl-event-content > .event-text {
+        font-size: 1.2rem;
+    }
+}

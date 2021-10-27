@@ -1,0 +1,297 @@
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #084ca1;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #222;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.meeting-info {
+    color: #084ca1;
+    font-weight: 700;
+}
+
+.business-card {
+    margin-bottom: 30px;
+}
+
+.business-card > .top-bar,
+.business-card > .bottom-bar {
+    display: flex;
+    width: calc(50% + 5px);
+}
+
+.business-card > .bottom-bar {
+    align-self: flex-end;
+}
+
+.business-card > .top-bar::before {
+    content: '';
+    display: block;
+    height: 10px;
+    background-color: #084ca1;
+    flex-grow: 1;
+}
+
+.business-card > .top-bar::after {
+    content: '';
+    display: block;
+    border: 5px solid transparent;
+    border-top: 5px solid #084ca1;
+    border-left: 5px solid #084ca1;
+}
+
+.business-card > .bottom-bar::before {
+    content: '';
+    display: block;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #222;
+    border-right: 5px solid #222;
+}
+
+.business-card > .bottom-bar::after {
+    content: '';
+    display: block;
+    height: 10px;
+    background-color: #222;
+    flex-grow: 1;
+}
+
+.business-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.business-card .person-info > .name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.business-card .person-info > .function {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.business-card .person-info > .mail, 
+.business-card .person-info > .phone {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+
+.business-card img {
+    height: 200px;
+    width: auto;
+    align-self: center;
+    margin: 1rem 0;
+}
+
+
+
+@media screen and (min-width: 560px) {
+    .business-card-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .business-card .person-info {
+        order: 2;
+    }
+
+    .business-card img {
+        order: 1;
+    }
+
+    .business-card .person-info > .name {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+    
+    .business-card .person-info > .function {
+        font-size: 1.1rem;
+    }
+    
+    .business-card .person-info > .mail, 
+    .business-card .person-info > .phone {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .business-card img {
+        height: 250px;
+    }
+
+    .business-card .person-info > .name {
+        font-size: 1.6rem;
+    }
+    
+    .business-card .person-info > .function {
+        font-size: 1.4rem;
+    }
+    
+    .business-card .person-info > .mail, 
+    .business-card .person-info > .phone {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .business-card img {
+        height: 200px;
+    }
+
+    .business-card .person-info > .name {
+        font-size: 1.2rem;
+    }
+    
+    .business-card .person-info > .function {
+        font-size: 1rem;
+    }
+    
+    .business-card .person-info > .mail, 
+    .business-card .person-info > .phone {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .business-card img {
+        height: 250px;
+    }
+
+    .business-card .person-info > .name {
+        font-size: 1.5rem;
+    }
+    
+    .business-card .person-info > .function {
+        font-size: 1.3rem;
+    }
+    
+    .business-card .person-info > .mail, 
+    .business-card .person-info > .phone {
+        font-size: 1.1rem;
+    }
+}
+
+#email-us > span.form-email-address {
+    display: block;
+    font-family: museo300;
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 0.8rem;
+}
+
+#email-us > span.form-email-address > i {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+#email-us label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+#email-us label#rodo-label {
+    text-transform: none;
+}
+
+#email-us input,
+#email-us textarea {
+    background-color: #e9e9e9;
+}
+
+#email-us button:hover,
+#email-us .g-recaptcha:hover {
+    cursor: pointer;
+}
+
+.alert-custom-valid, 
+.alert-custom-invalid {
+    font-family: museo300;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0;
+}
+
+.alert-custom-invalid {
+    color: #b94a48;
+    border: 1px solid #b94a48;
+}
+
+.alert-custom-valid {
+    color: #155724;
+    border: 1px solid #155724;
+}
+
+.alert-custom-valid > i, 
+.alert-custom-invalid > i {
+    font-size: 1.3rem;
+}
+
+#find-us label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+#find-us select:hover,
+#find-us input[type='button']:hover {
+    cursor: pointer;
+}
+
+.map-container {
+    padding: 0;
+}
+
+#map {
+    height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+    #map {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #map {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #map {
+        height: 500px;
+    }
+}
+
+.tooltip-inner {
+    
+    font-size: 0.7rem;
+    text-align: left;
+    padding: 1rem;
+}

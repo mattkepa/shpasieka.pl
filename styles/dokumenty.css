@@ -1,0 +1,96 @@
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #084ca1;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid #084ca1;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #084ca1;
+    margin: 1rem 0;
+}
+
+.site-introduction p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 1rem 0;
+}
+
+.doc-container a{
+    color: inherit;
+}
+
+.doc-container > a:hover {
+    text-decoration: none;
+}
+
+/* DOCUMENT ICON */
+.doc-icon-container {
+    perspective: 400px;
+    -webkit-perspective: 400px;
+    flex: 0 0 auto;
+}
+
+.doc-icon-container img {
+    margin-top: 0.5rem;
+}
+
+.doc-icon-card {
+    position: relative;
+    height: 64px;
+    width: 50px;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.doc-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 50px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.doc-icon-active, .doc-icon-inactive {
+    transform: rotateX(0deg);
+}
+
+.doc-icon-active {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.doc-container > a:hover .doc-icon-card {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+/* DOCUMENT DATA */
+.doc-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.3rem
+}
+
+.doc-info {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 0.6rem;
+}
+
+.doc-date {
+    font-size: 0.8rem;
+    color: #9d9d9d;
+}
+

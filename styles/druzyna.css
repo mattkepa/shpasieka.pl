@@ -1,0 +1,199 @@
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #084ca1;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+/* -- ABOUT TEAM -- */
+
+.about-team-info > p {
+    font-size: 1.1rem;
+}
+
+/* TEAM LOGOTYPE */
+.team-logotype > img {
+    height: 150px;
+    width: auto;
+}
+
+/* -- KADRA -- */
+
+.person-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.person-data-container {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+
+.person-function {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #084ca1;
+}
+
+.function-blue {
+    color: #084ca1;
+}
+
+.function-green {
+    color: #718c0f;
+}
+
+.function-brown {
+    color: #9D5528;
+}
+
+.function-separating-rope {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 25px;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.rope-blue {
+    background-image: url(../assets/site_team/rope_blue.svg);
+}
+
+.rope-green {
+    background-image: url(../assets/site_team/rope_green.svg);
+}
+
+.rope-brown {
+    background-image: url(../assets/site_team/rope_brown.svg);
+}
+
+.person-name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.person-email {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.person-phone {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.profile-picture {
+    order: 2;
+    margin: 15px auto 0 auto;
+}
+
+.profile-picture > img {
+    height: 250px;
+    width: auto;
+}
+
+/* -- PATROLS -- */
+
+.patrol-logo {
+    margin-bottom: 20px;
+}
+
+.patrol-logo > img {
+    height: 70px;
+}
+
+.patrol-data {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+p.patrol-info {
+    text-align: justify;
+}
+
+span.patrol-data-subheading {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #084ca1;
+}
+
+ul.patrol-people {
+    list-style-type: none;
+}
+
+/* -- MEDIA QUERIES -- */
+
+@media screen and (min-width: 400px) {
+    .team-logotype > img {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .team-logotype > img {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .team-logotype > img {
+        height: 300px;
+    }
+
+    .patrol-logo > img {
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .person-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .person-data-container {
+        order: 2;
+        flex-grow: 1;
+    }
+
+    .profile-picture {
+        order: 1;
+        margin: 0 20px 0 0;
+    }
+
+    .profile-picture > img {
+        height: 200px;
+    }
+
+    .function-separating-rope {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .patrol-logo > img {
+        height: 90px;
+    }
+
+    .patrol-data {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .profile-picture > img {
+        height: 250px;
+    }
+
+    .function-separating-rope {
+        height: 30px;
+    }
+}

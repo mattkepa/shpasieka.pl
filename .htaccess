@@ -1,0 +1,36 @@
+RewriteEngine on
+RewriteRule ^aktualnosci/?$ htmldocs_pasieka/aktualnosci.php
+RewriteRule ^aktualnosci/news-id=([0-9]+)/?$ htmldocs_pasieka/news/news.php?id=$1
+RewriteRule ^aktualnosci/([0-9]{4}-[0-9]{2})/?$ htmldocs_pasieka/news/archiwum_miesiace.php?date=$1
+RewriteRule ^aktualnosci/([a-z]+)/?$ htmldocs_pasieka/news/archiwum_kategorie.php?category=$1
+RewriteRule ^historia-szczepu/?$ htmldocs_pasieka/historia.html
+RewriteRule ^dokumenty/?$ htmldocs_pasieka/dokumenty.html
+RewriteRule ^galeria/?$ htmldocs_pasieka/galeria.html
+RewriteRule ^wesprzyj-nas/?$ htmldocs_pasieka/1procent.html
+RewriteRule ^kontakt/?$ htmldocs_pasieka/kontakt.html
+RewriteRule ^kontakt/email/?$ htmldocs_pasieka/send_mail.php
+RewriteRule ^2ldh/?$ htmldocs_2ldh/home_2ldh.html
+RewriteRule ^2ldh/strefa-harcerza/?$ htmldocs_2ldh/strefa_harcerza_2ldh.html
+RewriteRule ^2ldh/hal-2021/?$ htmldocs_2ldh/hal2021_2ldh.html
+RewriteRule ^2ldh/druzyna/?$ htmldocs_2ldh/druzyna_2ldh.html
+RewriteRule ^2ldh/historia/?$ htmldocs_2ldh/historia_2ldh.html
+RewriteRule ^2ldh/dokumenty/?$ htmldocs_2ldh/dokumenty_2ldh.html
+RewriteRule ^2ldh/kontakt/?$ htmldocs_2ldh/kontakt_2ldh.html
+RewriteRule ^22ldh/?$ htmldocs_22ldh/home_22ldh.html
+RewriteRule ^22ldh/strefa-harcerki/?$ htmldocs_22ldh/strefa_harcerki_22ldh.html
+RewriteRule ^22ldh/hal-2021/?$ htmldocs_22ldh/hal2021_22ldh.html
+RewriteRule ^22ldh/druzyna/?$ htmldocs_22ldh/druzyna_22ldh.html
+RewriteRule ^22ldh/dokumenty/?$ htmldocs_22ldh/dokumenty_22ldh.html
+RewriteRule ^22ldh/kontakt/?$ htmldocs_22ldh/kontakt_22ldh.html
+RewriteRule ^222ldw/?$ htmldocs_222ldw/home_222ldw.html
+RewriteRule ^222ldw/strefa-wedrownika/?$ htmldocs_222ldw/strefa_wedrownika_222ldw.html
+RewriteRule ^222ldw/hal-2018/?$ htmldocs_222ldw/hal2018_222ldw.html
+RewriteRule ^222ldw/druzyna/?$ htmldocs_222ldw/druzyna_222ldw.html
+RewriteRule ^222ldw/dokumenty/?$ htmldocs_222ldw/dokumenty_222ldw.html
+RewriteRule ^222ldw/kontakt/?$ htmldocs_222ldw/kontakt_222ldw.html
+RewriteRule ^zuchy/?$ htmldocs_lgzpp/home_lgzpp.html
+RewriteRule ^zuchy/strefa-rodzica/?$ htmldocs_lgzpp/strefa_rodzica_lgzpp.html
+RewriteRule ^zuchy/gromada/?$ htmldocs_lgzpp/gromada_lgzpp.html
+RewriteRule ^zuchy/dokumenty/?$ htmldocs_lgzpp/dokumenty_lgzpp.html
+RewriteRule ^zuchy/kontakt/?$ htmldocs_lgzpp/kontakt_lgzpp.html
+

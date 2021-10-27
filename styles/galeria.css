@@ -1,0 +1,63 @@
+.album-link {
+    color: #222;
+}
+
+.album-link:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+.album-date-day {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: #222;
+    margin-right: 0.3rem;
+}
+
+.album-date-month, .album-date-year {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1rem;
+}
+
+.album-date-year {
+    color: #777;
+}
+
+.album-link .img-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.album-link img {
+    transition: all 0.5s ease-in-out;
+}
+
+.album-link:hover img {
+    transform: scale(1.1);
+}
+
+.album-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #084ca1;
+    text-align: center;
+}
+
+/* CARDBAR REPAIR */
+.card-title {
+    display: block;
+}
+
+.cardbar > div:first-child {
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 992px) {
+    .cardbar > div:first-child {
+        justify-content: flex-start;
+    }
+}
